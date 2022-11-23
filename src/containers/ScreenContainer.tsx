@@ -1,11 +1,21 @@
-import {StatusBar, SafeAreaView, StyleSheet} from 'react-native';
+import {
+  StatusBar,
+  SafeAreaView,
+  StyleSheet,
+  StyleProp,
+  ViewStyle,
+} from 'react-native';
 import React, {type PropsWithChildren} from 'react';
 import Colors from '../constants/Colors';
 
-const ScreenContainer: React.FC<PropsWithChildren> = ({children}) => {
+type ScreenProps = PropsWithChildren<{
+  style?: StyleProp<ViewStyle>;
+}>;
+
+const ScreenContainer: React.FC<ScreenProps> = ({children, style}) => {
   return (
-    <SafeAreaView style={[styles.container]}>
-      <StatusBar barStyle={'dark-content'} backgroundColor={Colors.black} />
+    <SafeAreaView style={[style, styles.container]}>
+      <StatusBar barStyle={'light-content'} backgroundColor={Colors.grey900} />
       {children}
     </SafeAreaView>
   );

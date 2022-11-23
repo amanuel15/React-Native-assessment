@@ -34,7 +34,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    delay(2000).then(() => {
+    delay(1500).then(() => {
       console.log('Set delay falses');
       setLoading(false);
     });

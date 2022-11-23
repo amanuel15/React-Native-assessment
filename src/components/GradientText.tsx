@@ -12,7 +12,7 @@ const OrangeTitleText: React.FC<TextProps> = ({children, style, ...rest}) => {
   return (
     <GradientTextContainer
       colors={[Colors.lightOrange, Colors.redOne]}
-      style={[style, {fontSize: 28, fontWeight: 'bold'}]}
+      style={[style, {fontSize: 32, fontWeight: 'bold'}]}
       {...rest}>
       {children}
     </GradientTextContainer>
