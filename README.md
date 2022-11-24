@@ -7,3 +7,5 @@ To start the metro server run
 Then run the application with
 
 ### `yarn android`
+
+You can find a release apk in the root directory
